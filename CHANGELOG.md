@@ -1,3 +1,7 @@
+### v0.1.1
+
+- [`30359f9`](https://github.com/komet/komet-karma/commit/30359f965bc74d589e843eddec6bd3ec1745d140) try to parse subject in firstline (Christophe Hurpeau)
+
 ### v0.1.0
 
 - [`18c70c8`](https://github.com/komet/komet-karma/commit/18c70c857032378789aa942c43e7a6d2cc113c75) first commit (Christophe Hurpeau)
