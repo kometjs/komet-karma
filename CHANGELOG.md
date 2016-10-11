@@ -1,3 +1,7 @@
+### v0.1.2
+
+- [`f1ace64`](https://github.com/komet/komet-karma/commit/f1ace6441e231fdaf36b222ca678c56ba865520e) fix double space in commit (Christophe Hurpeau)
+
 ### v0.1.1
 
 - [`30359f9`](https://github.com/komet/komet-karma/commit/30359f965bc74d589e843eddec6bd3ec1745d140) try to parse subject in firstline (Christophe Hurpeau)
