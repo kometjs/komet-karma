@@ -1,3 +1,7 @@
+### v0.2.0
+
+- [`551e26d`](https://github.com/komet/komet-karma/commit/551e26d88ded75254a19b63b2e222e017b911ac6) do not ask questions if first line respects karma (Christophe Hurpeau)
+
 ### v0.1.2
 
 - [`f1ace64`](https://github.com/komet/komet-karma/commit/f1ace6441e231fdaf36b222ca678c56ba865520e) fix double space in commit (Christophe Hurpeau)
