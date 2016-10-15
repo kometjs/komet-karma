@@ -2,6 +2,11 @@ const regexp = /^(?:(feat|fix|docs|style|refactor|test|chore)?(?:\(([^)])*\))?:\
 
 module.exports = (message = '') => {
   const [, type, scope, subject, anythingElse] = (regexp.exec(message) || []);
+
+  if (type && subject) {
+    return { questions: [], processAnswers: (answers, message) => message };
+  }
+
   return {
     questions: [
       {
