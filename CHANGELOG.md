@@ -1,3 +1,7 @@
+### v0.2.2
+
+- [`b27a150`](https://github.com/komet/komet-karma/commit/b27a1505a95209626b11f20628dfae2998ffbe6c) add tests (Christophe Hurpeau)
+
 ### v0.2.1
 
 - [`b1a2530`](https://github.com/komet/komet-karma/commit/b1a25303ce6d19ac51959d200f4b90a8bb1587c3) fix: undefined message (Christophe Hurpeau)
