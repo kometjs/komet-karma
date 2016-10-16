@@ -1,4 +1,4 @@
-const regexp = /^(?:(feat|fix|docs|style|refactor|test|chore)?(?:\(([^)])*\))?:\s*)?(.*)?([\S\s]*)$/;
+const regexp = /^(?:(feat|fix|docs|style|refactor|test|chore)?(?:\(([^)]*)\))?:\s*)?(.*)?([\S\s]*)$/;
 
 module.exports = (message = '') => {
   const [, type, scope, subject, anythingElse] = (regexp.exec(message) || []);
