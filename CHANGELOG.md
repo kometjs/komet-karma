@@ -1,3 +1,7 @@
+### v0.2.1
+
+- [`b1a2530`](https://github.com/komet/komet-karma/commit/b1a25303ce6d19ac51959d200f4b90a8bb1587c3) fix: undefined message (Christophe Hurpeau)
+
 ### v0.2.0
 
 - [`551e26d`](https://github.com/komet/komet-karma/commit/551e26d88ded75254a19b63b2e222e017b911ac6) do not ask questions if first line respects karma (Christophe Hurpeau)
