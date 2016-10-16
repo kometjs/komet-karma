@@ -4,7 +4,13 @@ module.exports = (message = '') => {
   const [, type, scope, subject, anythingElse] = (regexp.exec(message) || []);
 
   if (type && subject) {
-    return { questions: [], processAnswers: () => message };
+    return {
+      questions: [],
+      processAnswers: () => ({
+        firstLine: `${type}${scope ? `(${scope})` : ''}: ${subject}`,
+        anythingElse,
+      }),
+    };
   }
 
   return {

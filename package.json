@@ -9,9 +9,11 @@
   "homepage": "https://github.com/komet/komet-karma",
   "scripts": {
     "release": "pob-repository-check-clean && pob-release",
-    "version": "pob-version"
+    "version": "pob-version",
+    "test": "mocha --harmony --es_staging --recursive --bail -u tdd test"
   },
   "devDependencies": {
+    "mocha": "^3.1.2",
     "pob-release": "^2.1.2"
   },
   "dependencies": {
