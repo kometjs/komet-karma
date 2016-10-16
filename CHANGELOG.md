@@ -1,3 +1,7 @@
+### v0.2.3
+
+- [`e7a8d54`](https://github.com/komet/komet-karma/commit/e7a8d54218c5cbfba02a255f302fcbef23f06e2c) fix scope (Christophe Hurpeau)
+
 ### v0.2.2
 
 - [`b27a150`](https://github.com/komet/komet-karma/commit/b27a1505a95209626b11f20628dfae2998ffbe6c) add tests (Christophe Hurpeau)
