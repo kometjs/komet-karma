@@ -1,14 +1,15 @@
-const regexp = /^(?:(feat|fix|docs|style|refactor|test|chore)?(?:\(([^)]*)\))?:\s*)?(.*)?([\S\s]*)$/;
+const regexp = /^((?:\#.*\n|\s*\n)*)(?:(feat|fix|docs|style|refactor|test|chore)?(?:\(([^)]*)\))?:\s*)?(.*)?([\S\s]*)$/;
 
 module.exports = (message = '') => {
-  const [, type, scope, subject, anythingElse] = (regexp.exec(message) || []);
+  const [, startMessage, type, scope, subject, endMessage] = (regexp.exec(message) || []);
 
   if (type && subject) {
     return {
       questions: [],
       processAnswers: () => ({
+        startMessage,
         firstLine: `${type}${scope ? `(${scope})` : ''}: ${subject}`,
-        anythingElse,
+        endMessage,
       }),
     };
   }
@@ -81,7 +82,7 @@ module.exports = (message = '') => {
         process.exit(1);
       }
 
-      return { firstLine, anythingElse };
+      return { startMessage, firstLine, endMessage };
     },
   };
 };

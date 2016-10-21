@@ -10,11 +10,11 @@ module.exports = (message = '') => {
   return {
     questions: _firstLine.questions.concat(_body.questions, _footer.questions),
     processAnswers(answers, message) {
-      const { firstLine, anythingElse } = _firstLine.processAnswers(answers, message);
-      message = firstLine;
+      const { startMessage, firstLine, endMessage } = _firstLine.processAnswers(answers, message);
+      message = `${startMessage}${firstLine}`;
       message = _body.processAnswers(answers, message);
       message = _footer.processAnswers(answers, message);
-      return message + (anythingElse ? `\n${anythingElse}` : '');
+      return message + (endMessage ? endMessage : '');
     },
   };
 };
