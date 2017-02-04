@@ -70,7 +70,7 @@ module.exports = (message = '') => {
         message: 'subject:',
         default: subject,
         validate: value => !!value.trim(),
-        filter: subject => subject.toLowerCase(),
+        filter: subject => subject,
       },
     ],
 
