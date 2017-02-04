@@ -1,3 +1,9 @@
+<a name="0.2.5"></a>
+## [0.2.5](https://github.com/kometjs/komet-karma/compare/v0.2.4...v0.2.5) (2017-02-04)
+
+refactoring
+
+
 ### v0.2.4
 
 - [`abebfd0`](https://github.com/komet/komet-karma/commit/abebfd0e3d1d9a9bb716a33f5e29b0bc50c8f932) chore(package): pob-release@^2.2.2 (Christophe Hurpeau)
