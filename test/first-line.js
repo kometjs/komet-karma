@@ -1,32 +1,32 @@
-const { strictEqual } = require('assert');
-const handle = require('../first-line');
+const strictEqual = require('assert').strictEqual;
+const handle = require('../lib/first-line');
 
 suite('first line', () => {
   test('new feature', () => {
     const res = handle('');
     strictEqual(res.questions.length, 3, 'has 3 questions');
 
-    const { startMessage, firstLine, endMessage } = res.processAnswers(
+    const resMessage = res.processAnswers(
       { type: 'feat', subject: 'new feature' },
       ''
     );
 
-    strictEqual(startMessage, '');
-    strictEqual(firstLine, 'feat: new feature');
-    strictEqual(endMessage, '');
+    strictEqual(resMessage.startMessage, '');
+    strictEqual(resMessage.firstLine, 'feat: new feature');
+    strictEqual(resMessage.endMessage, '');
   });
 
   test('new feature with scope', () => {
     const res = handle('');
     strictEqual(res.questions.length, 3, 'has 3 questions');
 
-    const { startMessage, firstLine, endMessage } = res.processAnswers(
+    const resMessage = res.processAnswers(
       { type: 'feat', scope: 'somescope', subject: 'new feature' },
       ''
     );
 
-    strictEqual(startMessage, '');
-    strictEqual(firstLine, 'feat(somescope): new feature');
-    strictEqual(endMessage, '');
+    strictEqual(resMessage.startMessage, '');
+    strictEqual(resMessage.firstLine, 'feat(somescope): new feature');
+    strictEqual(resMessage.endMessage, '');
   });
 });

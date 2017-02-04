@@ -1,6 +1,6 @@
-const firstLine = require('./first-line');
-const body = require('./body');
-const footer = require('./footer');
+const firstLine = require('./lib/first-line');
+const body = require('./lib/body');
+const footer = require('./lib/footer');
 
 module.exports = (message = '') => {
   const _firstLine = firstLine(message);
@@ -14,7 +14,7 @@ module.exports = (message = '') => {
       message = `${startMessage}${firstLine}`;
       message = _body.processAnswers(answers, message);
       message = _footer.processAnswers(answers, message);
-      return message + (endMessage ? endMessage : '');
+      return message + (endMessage || '');
     },
   };
 };

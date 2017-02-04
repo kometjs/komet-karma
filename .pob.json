@@ -1,5 +1,6 @@
 {
   "envs": [],
-  "documentation": true,
-  "testing": false
+  "documentation": false,
+  "testing": true,
+  "doclets": false
 }
