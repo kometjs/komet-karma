@@ -1,3 +1,9 @@
+### v0.2.4
+
+- [`abebfd0`](https://github.com/komet/komet-karma/commit/abebfd0e3d1d9a9bb716a33f5e29b0bc50c8f932) chore(package): pob-release@^2.2.2 (Christophe Hurpeau)
+- [`ae53611`](https://github.com/komet/komet-karma/commit/ae5361192b3dbf61324eb1af141ea93ee90f2b95) feat: ignore commit messages in rebase squash/reword (Christophe Hurpeau)
+- [`a9abd04`](https://github.com/komet/komet-karma/commit/a9abd041c1867d0102fac3757932e5805791e019) fix: stop forcing lowercase subject (Christophe Hurpeau)
+
 ### v0.2.3
 
 - [`e7a8d54`](https://github.com/komet/komet-karma/commit/e7a8d54218c5cbfba02a255f302fcbef23f06e2c) fix scope (Christophe Hurpeau)
