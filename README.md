@@ -8,6 +8,10 @@ karma preset for komet
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Coverage percentage][coverage-image]][coverage-url]
 
+# Deprecated
+
+Use [@commitlint/prompt-cli](https://github.com/marionebl/commitlint/tree/master/@commitlint/prompt-cli) instead.
+
 ## Install
 
 ```sh
